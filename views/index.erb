@@ -1,0 +1,28 @@
+<h1 class='center-text'> Ask A Question </h1>
+
+
+<div class='eightball'>
+
+  <div class ='ask-question'>
+    <form method='POST' action='/' class='center-text' maxlength='40'>
+      <label> Ask A Question: </lable>
+      <input type='text' name='info' required />
+      <input type='submit' />
+    </form>
+  </div>
+
+  <div class='answers'>
+    <% if @question %>
+      <p><strong>Question: </strong> <%= @question %> </p>
+      <!-- <p><strong>Answer: </strong> <%= $clone.sample %> </p> -->
+    <% end %>
+
+  </div>
+
+  <div class='answers'>
+    <% if @question %>
+      <p><strong>Answer: </strong> <%= $clone.sample %> </p>
+    <% end %>
+  </div>
+
+</div>
